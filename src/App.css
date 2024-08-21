@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.App {
+  text-align: center;
+  padding: 50px;
+}
+
+.header {
+  background-color: #282c34;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.contact-info {
+  margin-top: 30px;
+}
+
+.animated-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.animated-button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+.objective {
+  background-color: #ffffff;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.objective h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.objective p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.experience {
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.experience h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.vertical-timeline-element--work h3,
+.vertical-timeline-element--work h4 {
+  color: #ffffff;
+}
+
+.vertical-timeline-element--work p {
+  color: #ffffff;
+}
+.projects {
+  margin: 40px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 300px;
+  height: 200px;
+  background-color: #61dafb;
+  border-radius: 10px;
+  perspective: 1000px;
+  margin-bottom: 30px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+}
+
+.front {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header {
+  background-image: url('coffee.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 50px;
+  color: white;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+  z-index: 1;
+}
+
+.header .intro,
+.header .contact-info {
+  position: relative;
+  z-index: 2;
+}
+
+#education {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.education-card {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
